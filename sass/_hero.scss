@@ -1,0 +1,136 @@
+html, body{
+    margin: 0px;
+    font-family: ubuntu;
+    overflow-x: hidden;
+}
+
+
+h1{
+    font-size: 48px;
+}
+p, a{
+    font-size: 32px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#hero{
+    position: relative;
+    svg{
+        position: absolute;
+        bottom: 0px;
+    }
+}
+#hero .inner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(82,82,82,.87), rgba(82,82,82,.87)), url("./home-2.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    .copy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        color: white;
+        text-align: center;
+        
+        min-height: 100vh;
+        *{
+            width: 75%;
+        }
+
+        /**{
+            position: relative;
+            top: 25% ;
+
+            @media screen and  (max-width: 720px) {
+                top: 0;
+            }
+        }*/
+
+        @media screen and  (max-width: 720px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    #header{
+        //display: flex;
+        //flex-direction: row;
+        //justify-content: space-between;
+        //align-items: center;
+
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+
+        .left{
+            margin-left: 35px;
+            display: flex;
+            flex-direction: row;
+
+            p{
+               position: relative;
+               top: 5px;
+               left: 15px;
+            }
+        }
+
+        .right{
+            a{
+                margin-right: 35px;
+                display: block;
+
+                position: absolute;
+                right: 0;
+                top: 0;
+
+                img{
+                    width:250px;
+            }
+
+            @media screen and  (max-width: 500px) {
+                display: none;
+            }
+        }
+        }
+
+        @media screen and  (max-width: 900px) {
+            @media screen and  (max-height: 670px) {
+                position: inherit;
+
+            }
+
+        }
+    }
+
+    #small-store-btns{
+        
+        display: none;
+        @media screen and  (max-width: 500px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:50px;
+
+            z-index: 10;
+        }
+
+        img{
+            width:200px;
+        }
+    }
+}
+
+    

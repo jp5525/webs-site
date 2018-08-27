@@ -1,0 +1,45 @@
+#section-2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 35px 10%;
+    background-color: #4682B4;
+    flex-wrap: wrap;
+	
+    color: white;
+
+   // .left, .right{
+        //display: flex;
+        //justify-content: center
+    //}
+    .left{
+      //  width: 30%;
+        img{
+            max-width: 300px ;
+        }
+
+        @media screen and  (max-width: 720px) {
+            width: inherit;
+            display: block;
+        }
+        
+    }
+
+    .right{
+        width: 50%;
+        justify-content: center;
+        margin-left: 35px;
+        min-width: 350px;
+
+        @media screen and  (max-width: 1040px) {
+            text-align: center;
+            width: inherit;
+            display: block;
+            margin-left: 0px;
+        }
+    }
+
+    
+}

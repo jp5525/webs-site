@@ -1,0 +1,47 @@
+#section-4{
+    position: relative;
+    #inner{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+
+        padding: 35px 10%;
+        background-color:#3C6F99;
+
+        color: white;
+
+        .right{
+           // width:30%;
+            z-index: 100;
+            //display: flex;
+            img{
+                max-width: 300px;
+            }
+
+            @media screen and  (max-width: 720px) {
+                width: inherit;
+                display: block;
+            }
+        }
+        .left{
+            width: 50%;
+            min-width: 350px;
+
+            @media screen and  (max-width: 1040px) {
+                text-align: center;
+                width: inherit;
+                display: block;
+            }
+        }
+    }
+
+    svg{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+

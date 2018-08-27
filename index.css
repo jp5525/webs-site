@@ -1,0 +1,205 @@
+html, body {
+  margin: 0px;
+  font-family: ubuntu;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p, a {
+  font-size: 32px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#hero {
+  position: relative;
+}
+#hero svg {
+  position: absolute;
+  bottom: 0px;
+}
+
+#hero .inner {
+  min-height: 100vh;
+  background: linear-gradient(rgba(82, 82, 82, 0.87), rgba(82, 82, 82, 0.87)), url("./home-2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+#hero .inner .copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  /**{
+      position: relative;
+      top: 25% ;
+
+      @media screen and  (max-width: 720px) {
+          top: 0;
+      }
+  }*/
+}
+#hero .inner .copy * {
+  width: 75%;
+}
+@media screen and (max-width: 720px) {
+  #hero .inner .copy {
+    margin-bottom: 20px;
+  }
+}
+#hero .inner #header {
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+#hero .inner #header .left {
+  margin-left: 35px;
+  display: flex;
+  flex-direction: row;
+}
+#hero .inner #header .left p {
+  position: relative;
+  top: 5px;
+  left: 15px;
+}
+#hero .inner #header .right a {
+  margin-right: 35px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#hero .inner #header .right a img {
+  width: 250px;
+}
+@media screen and (max-width: 500px) {
+  #hero .inner #header .right a {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) and (max-height: 670px) {
+  #hero .inner #header {
+    position: inherit;
+  }
+}
+#hero .inner #small-store-btns {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  #hero .inner #small-store-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    z-index: 10;
+  }
+}
+#hero .inner #small-store-btns img {
+  width: 200px;
+}
+
+#section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 35px 10%;
+  background-color: #4682B4;
+  flex-wrap: wrap;
+  color: white;
+}
+#section-2 .left img {
+  max-width: 300px;
+}
+@media screen and (max-width: 720px) {
+  #section-2 .left {
+    width: inherit;
+    display: block;
+  }
+}
+#section-2 .right {
+  width: 50%;
+  justify-content: center;
+  margin-left: 35px;
+  min-width: 350px;
+}
+@media screen and (max-width: 1040px) {
+  #section-2 .right {
+    text-align: center;
+    width: inherit;
+    display: block;
+    margin-left: 0px;
+  }
+}
+
+#section-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 100px;
+  flex-wrap: wrap;
+}
+#section-3 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-4 {
+  position: relative;
+}
+#section-4 #inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  padding: 35px 10%;
+  background-color: #3C6F99;
+  color: white;
+}
+#section-4 #inner .right {
+  z-index: 100;
+}
+#section-4 #inner .right img {
+  max-width: 300px;
+}
+@media screen and (max-width: 720px) {
+  #section-4 #inner .right {
+    width: inherit;
+    display: block;
+  }
+}
+#section-4 #inner .left {
+  width: 50%;
+  min-width: 350px;
+}
+@media screen and (max-width: 1040px) {
+  #section-4 #inner .left {
+    text-align: center;
+    width: inherit;
+    display: block;
+  }
+}
+#section-4 svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
