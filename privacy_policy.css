@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cfcfcf;
+}
+
+#main-card {
+  border-radius: 3px;
+  box-shadow: 2px 0 58px -4px rgba(0, 0, 0, 0.15);
+  padding: 35px;
+  background-color: white;
+  width: 65%;
+}
+
+/*# sourceMappingURL=privacy_policy.css.map */
